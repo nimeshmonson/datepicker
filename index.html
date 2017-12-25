@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <link rel='stylesheet' type='text/css' href='style/style.css'/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css'/>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type='text/javascript' src='js/app.js'></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="http://timeago.yarp.com/jquery.timeago.js"></script>
+    
+</head>
+<style>
+.datepicker-wrapper{
+	border-left:2px solid green;
+	padding:4%;
+}
+.approximator-label{
+	cursor: pointer;
+	color:blue;
+}
+#exact-label{
+	cursor: pointer;
+	color:blue;
+}
+</style>
+<body>
+	<div class="container" >
+		<div class="row">
+			<h1>Question</h1>
+		</div>
+
+		<div class="row-offset-1">
+			<h4 id="h5">Instructions</h4>
+		</div>
+		<div class="col-md-5">
+			<div class ="datepicker-wrapper col-md-8 text-left">
+				<input type="text" class="form-control" id="datepicker-input">
+			</div>	
+			<div class ="approximator-wrapper">
+				
+  				<div class="block action" onclick="addDay(1)"><span class="glyphicon glyphicon-menu-up"></span></div>
+  				<div class="block action" onclick="addUnit(1)"><span class="glyphicon glyphicon-menu-up"></span></div>
+  				<div ></div>
+  				<div class="block middle" id="day">1</div>
+  				<div class="block middle" id="unit">May</div>
+  				<div ></div>
+  				<div class="block action" onclick="addDay(-1)"><span class="glyphicon glyphicon-menu-down"></span></div>
+  				<div class="block action" onclick="addUnit(-1)"><span class="glyphicon glyphicon-menu-down"></span></div>
+  				<div class="text-center" id ="exact-label">Exact</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
